@@ -1,0 +1,16 @@
+body {
+	padding: 50px;
+	color: #333;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.done {
+	color: #999;
+	text-decoration: line-through;
+}
+.pure-button {
+	font-size: 85%;
+}
+.active {
+	font-weight: bold;
+}
