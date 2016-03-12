@@ -5,4 +5,12 @@ function nextItem (){
 
 $('.next-button').click(nextItem);
 
-console.log('starting...');
+
+function addThings () {
+	 console.log(arguments);
+	 var total = 0;
+	 for(var i = 0; i < arguments.length; i++){
+	 		total = total + arguments[i];
+	 }
+	 return total;
+}

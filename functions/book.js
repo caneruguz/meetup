@@ -59,4 +59,22 @@ var o = { // An object o.
 		}
 	}
 };
-o.m();
+//o.m();
+
+
+// Closure
+var scope = "global scope"; // A global variable
+function checkscope() {
+	var scope = "local scope"; // A local variable
+	function f() { return scope; } // Return the value in scope here
+	return f();
+}
+//checkscope() // => "local scope"
+
+var scope = "global scope"; // A global variable
+function checkscope() {
+	var scope = "local scope"; // A local variable
+	function f() { return scope; } // Return the value in scope here
+	return f;
+}
+//checkscope()() // What does this return?
