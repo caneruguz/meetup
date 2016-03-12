@@ -3,6 +3,10 @@ body {
 	color: #333;
 	font-family: 'Open Sans', sans-serif;
 }
+ul>li {
+    font-size: 20px;
+    font-weight: 300;
+}
 
 .done {
 	color: #999;
@@ -13,4 +17,7 @@ body {
 }
 .active {
 	font-weight: bold;
+}
+.buttons {
+	margin-top: 40px;
 }
