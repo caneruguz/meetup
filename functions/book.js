@@ -14,8 +14,12 @@ function distance(x1, y1, x2, y2) {
 // Recall that x! is the product of x and all positive integers less than it.
 function factorial(x) {
 	if (x <= 1) return 1;
-	return x * factorial(x-1);
+	var result = x * factorial(x-1);
+	console.log('result for ' + x + ' is ' + result);
+	return result;
 }
+
+
 
 // This function expression defines a function that squares its argument.
 // Note that we assign it to a variable
@@ -82,7 +86,6 @@ function checkscope() {
 
 // This function returns a function that always returns v
 function constfunc(v) { return function() { return v; }; }
-// Create an array of constant functions:
 var funcs = [];
 for(var i = 0; i < 10; i++) funcs[i] = constfunc(i);
 // The function at array element 5 returns the value 5.
@@ -92,7 +95,9 @@ for(var i = 0; i < 10; i++) funcs[i] = constfunc(i);
 function constfuncs() {
 	var funcs = [];
 	for(var i = 0; i < 10; i++)
-		funcs[i] = function() { return i; };
+		funcs[i] = function(i) {
+			return i;
+		};
 	return funcs;
 }
 var funcs = constfuncs();

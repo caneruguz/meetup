@@ -9,6 +9,8 @@
 	<body>
 
 
+			<div class="result"></div>
+
 		<h1>JS Functions Overview</h1>
 
 		<ul>
@@ -27,7 +29,11 @@
 		</div>
 
 		<script   src="https://code.jquery.com/jquery-2.2.1.min.js"   integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="   crossorigin="anonymous"></script>
-		<script type="text/javascript" src="book	.js"></script>
+		<script type="text/javascript" src="book.js"></script>
 		<script type="text/javascript" src="scripts.js"></script>
+		<script type="text/javascript">
+			var a = factorial(5);
+			$('.result').text(a);
+		</script>
 	</body>
 </html>

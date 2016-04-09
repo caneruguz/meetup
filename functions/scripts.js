@@ -1,3 +1,4 @@
+
 function nextItem (){
 	$('ul li:not(.done)').first().removeClass('active').addClass('done');
 	$('ul li:not(.done)').first().addClass('active');
@@ -14,3 +15,6 @@ function addThings () {
 	 }
 	 return total;
 }
+
+
+
